@@ -1,6 +1,27 @@
 # Gitea Mixin
 
-Gitea Mixin is a set of configurable Grafana dashboards based on the metrics exported by the Gitea built-in metrics endpoint.
+This mixin provides the Grafana dashboard with metrics exposed by Gitea, including application's key stats as well as CPU, memory, file descriptors utilization.
+
+
+![image](https://storage.googleapis.com/grafanalabs-integration-assets/gitea/screenshots/screenshot0.png)
+
+## Gitea configuration
+
+To get metrics from Gitea instance you need to configure [metrics](https://docs.gitea.io/en-us/config-cheat-sheet/#metrics-metrics) section to enable /metrics endpoint:
+
+```ini
+[metrics]
+ENABLED=true
+```
+
+In order to see issues stats grouped by repositores and labels, Gitea 1.16.0 or above is required with the following flags set:
+
+```ini
+[metrics]
+ENABLED=true
+ENABLED_ISSUE_BY_REPOSITORY=true
+ENABLED_ISSUE_BY_LABEL=true
+```
 
 ## Generate config files
 
