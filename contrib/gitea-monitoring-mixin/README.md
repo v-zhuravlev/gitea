@@ -2,8 +2,7 @@
 
 This mixin provides the Grafana dashboard with metrics exposed by Gitea, including application's key stats as well as CPU, memory, file descriptors utilization.
 
-
-![image](https://storage.googleapis.com/grafanalabs-integration-assets/gitea/screenshots/screenshot0.png)
+![screenshot0](https://storage.googleapis.com/grafanalabs-integration-assets/gitea/screenshots/screenshot0.png)
 
 ## Gitea configuration
 
